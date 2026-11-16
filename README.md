@@ -208,8 +208,7 @@ locally to evaluate the work. Sample documents are fictional. SciFact is © its 
 
 <div align="center">
 <br/>
-If Satyori taught you something about hybrid retrieval, a ⭐ helps more people find it.<br/>
-The original single-file version lives on the <a href="https://github.com/Kaushik-verse/satyori-hybrid-rag/tree/old-version"><code>old-version</code></a> branch.
+If Satyori taught you something about hybrid retrieval, a ⭐ helps more people find it.
 <br/><br/>
 <sub>Built by <b>Ch Sai Kaushik</b> · B.Tech CSE (Data Science), VIT Vellore · <a href="https://github.com/Kaushik-verse">@Kaushik-verse</a></sub>
 </div>
