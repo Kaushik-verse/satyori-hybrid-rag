@@ -1,40 +1,14 @@
-# Python
 __pycache__/
 *.py[cod]
-*$py.class
-
-# Virtual Environment
 .venv/
-venv/
-env/
-
-# Streamlit
+.env
 .streamlit/secrets.toml
-
-# ChromaDB
-chroma_db/
-
-# IDE
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+*.log
 .idea/
 .vscode/
-
-# macOS
-.DS_Store
-
-# Logs
-*.log
-
-# Environment Variables
-.env
-
-# Python Build Files
-build/
-dist/
-*.egg-info/
-
-# Jupyter
-.ipynb_checkpoints/
-
-# Temporary Files
-*.tmp
-*.temp
+bench/data/
+bench/.cache/
+bench/run.log

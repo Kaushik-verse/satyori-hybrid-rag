@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 700" width="1280" height="700" role="img" aria-labelledby="t d">
+  <title id="t">How Satyori answers a question</title>
+  <desc id="d">A question is condensed and routed, searched through BM25, dense and SPLADE channels plus optional HyDE and RAG-Fusion, fused, reranked by a cross-encoder, diversified with MMR, passed through a confidence gate, answered by one model or a council, and checked sentence by sentence.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#9A958A"/></marker>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#1C1C1E" flood-opacity=".07"/></filter>
+  </defs>
+  <rect width="1280" height="700" rx="24" fill="#F6F3EC"/>
+  <g font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+    <text x="56" y="62" font-size="13" font-weight="700" fill="#C8412B" letter-spacing="2.4">ARCHITECTURE</text>
+    <text x="56" y="98" font-family="'Hiragino Mincho ProN',Georgia,serif" font-size="32" font-weight="700" fill="#1C1C1E">From question to grounded answer</text>
+
+    <!-- stage labels -->
+    <g font-size="11" font-weight="700" fill="#9A958A" letter-spacing="1.8">
+      <text x="56" y="146">1 · UNDERSTAND</text><text x="300" y="146">2 · RETRIEVE</text><text x="604" y="146">3 · RANK</text>
+      <text x="868" y="146">4 · ANSWER</text><text x="1080" y="146">5 · VERIFY</text>
+    </g>
+
+    <g stroke="#9A958A" stroke-width="1.6" fill="none" marker-end="url(#a)">
+      <path d="M256 250H296"/><path d="M256 250C280 250 276 340 296 340"/><path d="M256 250C280 250 276 430 296 430"/>
+      <path d="M256 250C280 250 276 530 296 530" stroke-dasharray="4 4"/>
+      <path d="M548 250C576 250 572 330 600 330"/><path d="M548 340H600"/><path d="M548 430C576 430 572 350 600 350"/>
+      <path d="M548 530C576 530 572 370 600 370" stroke-dasharray="4 4"/>
+      <path d="M820 340H864"/><path d="M1032 340H1076"/>
+    </g>
+
+    <!-- 1 understand -->
+    <g filter="url(#sh)">
+      <rect x="56" y="170" width="200" height="160" rx="16" fill="#FFFDF8" stroke="#E0D9CB"/>
+    </g>
+    <text x="76" y="202" font-size="16" font-weight="700" fill="#1C1C1E">Question</text>
+    <text x="76" y="228" font-size="13" fill="#64646B">Follow-ups rewritten</text>
+    <text x="76" y="246" font-size="13" fill="#64646B">into standalone queries</text>
+    <rect x="76" y="262" width="160" height="56" rx="10" fill="#F7E3DD"/>
+    <text x="90" y="281" font-size="13" font-weight="700" fill="#C8412B">Query router</text>
+    <text x="90" y="297" font-size="11.5" fill="#8A3A28">an ID? lean on BM25</text>
+    <text x="90" y="311" font-size="11.5" fill="#8A3A28">"can I…?" lean on dense</text>
+
+    <!-- 2 retrieve -->
+    <g filter="url(#sh)">
+      <rect x="300" y="210" width="248" height="80" rx="14" fill="#FFFDF8" stroke="#C9D3E3"/>
+      <rect x="300" y="300" width="248" height="80" rx="14" fill="#FFFDF8" stroke="#D3DDC4"/>
+      <rect x="300" y="390" width="248" height="80" rx="14" fill="#FFFDF8" stroke="#C6D8EA"/>
+      <rect x="300" y="490" width="248" height="80" rx="14" fill="#FFFDF8" stroke="#E8D6B4" stroke-dasharray="5 4"/>
+    </g>
+    <circle cx="322" cy="240" r="6" fill="#23395B"/><text x="338" y="245" font-size="15" font-weight="700" fill="#1C1C1E">BM25</text>
+    <text x="322" y="270" font-size="12.5" fill="#64646B">exact IDs: CS-2023-8891, 88/2</text>
+    <circle cx="322" cy="330" r="6" fill="#5E7F36"/><text x="338" y="335" font-size="15" font-weight="700" fill="#1C1C1E">Dense · bge-small</text>
+    <text x="322" y="360" font-size="12.5" fill="#64646B">meaning: "demolish" ≈ "knock down"</text>
+    <circle cx="322" cy="420" r="6" fill="#2F6A99"/><text x="338" y="425" font-size="15" font-weight="700" fill="#1C1C1E">SPLADE++ learned sparse</text>
+    <text x="322" y="450" font-size="12.5" fill="#64646B">keywords + learned expansions</text>
+    <circle cx="322" cy="520" r="6" fill="#C98F2B"/><text x="338" y="525" font-size="15" font-weight="700" fill="#1C1C1E">HyDE · RAG-Fusion</text>
+    <text x="322" y="550" font-size="12.5" fill="#64646B">optional: the LLM helps search</text>
+
+    <!-- 3 rank -->
+    <g filter="url(#sh)"><rect x="604" y="210" width="216" height="290" rx="16" fill="#FFFDF8" stroke="#E0D9CB"/></g>
+    <rect x="622" y="228" width="180" height="70" rx="10" fill="#F7E3DD"/>
+    <text x="638" y="256" font-size="14" font-weight="700" fill="#C8412B">Fusion</text>
+    <text x="638" y="278" font-size="12" fill="#8A3A28">RRF · z-score · routed</text>
+    <rect x="622" y="310" width="180" height="70" rx="10" fill="#ECE7DC"/>
+    <text x="638" y="338" font-size="14" font-weight="700" fill="#1C1C1E">Cross-encoder rerank</text>
+    <text x="638" y="360" font-size="12" fill="#64646B">ms-marco MiniLM, top 20</text>
+    <rect x="622" y="392" width="180" height="90" rx="10" fill="#ECE7DC"/>
+    <text x="638" y="420" font-size="14" font-weight="700" fill="#1C1C1E">MMR diversity</text>
+    <text x="638" y="442" font-size="12" fill="#64646B">brochure AND agreement,</text>
+    <text x="638" y="460" font-size="12" fill="#64646B">not two copies of one</text>
+
+    <!-- 4 answer -->
+    <g filter="url(#sh)"><rect x="868" y="210" width="164" height="290" rx="16" fill="#FFFDF8" stroke="#E0D9CB"/></g>
+    <text x="886" y="244" font-size="14" font-weight="700" fill="#1C1C1E">Confidence gate</text>
+    <text x="886" y="264" font-size="12" fill="#64646B">weak evidence →</text>
+    <text x="886" y="282" font-size="12" fill="#64646B">rewrite once → abstain</text>
+    <line x1="886" y1="300" x2="1014" y2="300" stroke="#E0D9CB"/>
+    <text x="886" y="328" font-size="14" font-weight="700" fill="#1C1C1E">Groq LLM</text>
+    <text x="886" y="348" font-size="12" fill="#64646B">gpt-oss-120b, cited [n]</text>
+    <line x1="886" y1="366" x2="1014" y2="366" stroke="#E0D9CB"/>
+    <text x="886" y="394" font-size="14" font-weight="700" fill="#9A6A1A">Council mode</text>
+    <text x="886" y="414" font-size="12" fill="#64646B">3 models draft,</text>
+    <text x="886" y="432" font-size="12" fill="#64646B">a chair keeps only</text>
+    <text x="886" y="450" font-size="12" fill="#64646B">what sources support</text>
+
+    <!-- 5 verify -->
+    <g filter="url(#sh)"><rect x="1076" y="210" width="148" height="290" rx="16" fill="#1C1C1E"/></g>
+    <circle cx="1100" cy="240" r="9" fill="#C8412B"/>
+    <text x="1094" y="282" font-size="14" font-weight="700" fill="#FFFDF8">Evidence check</text>
+    <text x="1094" y="304" font-size="12" fill="#CFCAC0">each sentence vs</text>
+    <text x="1094" y="322" font-size="12" fill="#CFCAC0">its cited source</text>
+    <text x="1094" y="356" font-size="14" font-weight="700" fill="#FFFDF8">Figure check</text>
+    <text x="1094" y="378" font-size="12" fill="#CFCAC0">every ₹, date, %</text>
+    <text x="1094" y="396" font-size="12" fill="#CFCAC0">must be in sources</text>
+    <text x="1094" y="430" font-size="14" font-weight="700" fill="#FFFDF8">Conflict flag</text>
+    <text x="1094" y="452" font-size="12" fill="#CFCAC0">brochure vs contract</text>
+
+    <text x="56" y="640" font-size="13" fill="#64646B">Dashed boxes are optional and need an LLM call. Every stage is visible in the Developer lab: each source shows its rank at every step (BM25 #1 → Fused #1 → Rerank #1).</text>
+  </g>
+</svg>

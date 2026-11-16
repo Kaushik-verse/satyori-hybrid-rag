@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 480" width="1280" height="480" role="img" aria-labelledby="t d">
+  <title id="t">Satyori: insight grounded in truth</title>
+  <desc id="d">Satya, Sanskrit for truth, plus Satori, Japanese for sudden insight. A hybrid RAG assistant for property due diligence.</desc>
+  <defs>
+    <pattern id="seigaiha" width="48" height="24" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#E7E1D4" stroke-width="1.2">
+        <path d="M0 24a24 24 0 0 1 48 0M8 24a16 16 0 0 1 32 0M16 24a8 8 0 0 1 16 0"/>
+        <path d="M-24 12a24 24 0 0 1 48 0M24 12a24 24 0 0 1 48 0"/>
+      </g>
+    </pattern>
+    <linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="#F6F3EC"/><stop offset=".55" stop-color="#F6F3EC" stop-opacity=".92"/><stop offset="1" stop-color="#F6F3EC" stop-opacity=".2"/></linearGradient>
+  </defs>
+  <rect width="1280" height="480" rx="24" fill="#F6F3EC"/>
+  <rect width="1280" height="480" rx="24" fill="url(#seigaiha)"/>
+  <rect width="1280" height="480" rx="24" fill="url(#fade)"/>
+
+  <!-- big enso + bindu on the right -->
+  <g transform="translate(1010 240)">
+    <path d="M70 -128 A150 150 0 1 1 -10 -150" fill="none" stroke="#1C1C1E" stroke-width="22" stroke-linecap="round" opacity=".92"/>
+    <path d="M70 -128 A150 150 0 0 1 128 -70" fill="none" stroke="#1C1C1E" stroke-width="9" stroke-linecap="round" opacity=".8"/>
+    <circle r="22" fill="#C8412B"/>
+    <circle r="40" fill="none" stroke="#C8412B" stroke-opacity=".25" stroke-width="2"/>
+  </g>
+
+  <g font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+    <text x="72" y="92" font-size="13" font-weight="700" fill="#C8412B" letter-spacing="2.6">HYBRID RAG · PROPERTY DUE DILIGENCE</text>
+    <text x="68" y="186" font-family="'Hiragino Mincho ProN','Yu Mincho',Georgia,'Times New Roman',serif" font-size="104" font-weight="700" fill="#1C1C1E">Satyori</text>
+
+    <g transform="translate(72 232)" font-size="17">
+      <text x="0" y="0" fill="#1C1C1E" font-weight="700">Satya</text>
+      <text x="52" y="0" fill="#64646B" font-size="11" letter-spacing="1.5">SANSKRIT</text>
+      <text x="124" y="0" fill="#64646B">truth</text>
+      <text x="174" y="0" fill="#C8412B" font-weight="700">+</text>
+      <text x="198" y="0" fill="#1C1C1E" font-weight="700">Satori</text>
+      <text x="257" y="0" fill="#64646B" font-size="11" letter-spacing="1.5">JAPANESE</text>
+      <text x="331" y="0" fill="#64646B">sudden insight</text>
+    </g>
+    <text x="72" y="298" font-family="'Hiragino Mincho ProN',Georgia,serif" font-size="34" font-style="italic" fill="#1C1C1E">Insight, grounded in truth.</text>
+    <rect x="72" y="310" width="372" height="3" rx="1.5" fill="#C8412B"/>
+
+    <text x="72" y="352" font-size="18" fill="#4A4A50">Ask questions about sale agreements, RERA, title and loan papers.</text>
+    <text x="72" y="378" font-size="18" fill="#4A4A50">Every answer is cited, cross-checked, and honest when the answer isn't there.</text>
+
+    <g font-size="13" font-weight="600" transform="translate(72 408)">
+      <rect width="84" height="30" rx="15" fill="#E4E9F1"/><text x="42" y="20" text-anchor="middle" fill="#23395B">BM25</text>
+      <rect x="94" width="88" height="30" rx="15" fill="#E7EEDD"/><text x="138" y="20" text-anchor="middle" fill="#5E7F36">Dense</text>
+      <rect x="192" width="96" height="30" rx="15" fill="#E2ECF5"/><text x="240" y="20" text-anchor="middle" fill="#2F6A99">SPLADE</text>
+      <rect x="298" width="80" height="30" rx="15" fill="#F6ECDB"/><text x="338" y="20" text-anchor="middle" fill="#9A6A1A">HyDE</text>
+      <rect x="388" width="150" height="30" rx="15" fill="#F7E3DD"/><text x="463" y="20" text-anchor="middle" fill="#C8412B">Fusion + Rerank</text>
+      <rect x="548" width="126" height="30" rx="15" fill="#ECE7DC"/><text x="611" y="20" text-anchor="middle" fill="#1C1C1E">LLM council</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,80 @@
+:root {
+  --ink: #1c1c1e;
+  --muted: #64646b;
+  --line: #e0d9cb;
+  --paper: #f6f3ec;
+  --card: #fffdf8;
+  --vermilion: #c8412b;
+  --indigo: #23395b;
+  --matcha: #5e7f36;
+  --saffron: #c98f2b;
+  --ok: #2f6b3c;
+  --warn: #a2501a;
+}
+
+.block-container { padding-top: 2.4rem; max-width: 1120px; }
+h1, h2, h3, h4, h5 { letter-spacing: -0.01em; }
+
+/* ---------- hero (Ask page, empty state) */
+.sy-hero { display: flex; align-items: center; gap: 22px; margin: 8px 0 10px; }
+.sy-hero svg { flex: none; }
+.sy-hero h1 { font-size: 3.2rem; line-height: 1; margin: 2px 0 10px; padding: 0; }
+.sy-kicker { font-size: .72rem; font-weight: 700; letter-spacing: .16em; color: var(--vermilion); text-transform: uppercase; }
+.sy-meaning { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: .9rem; color: var(--muted); }
+.sy-meaning b { color: var(--ink); font-weight: 700; }
+.sy-meaning i { font-style: normal; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.sy-meaning .plus { color: var(--vermilion); font-weight: 700; }
+.sy-meaning .res { color: var(--ink); font-weight: 600; border-bottom: 2px solid var(--vermilion); }
+.sy-sub { color: var(--muted); margin: 6px 0 22px; font-size: 1rem; max-width: 760px; line-height: 1.55; }
+.sy-title { margin: 2px 0 0; padding: 0; }
+
+/* ---------- sidebar brand */
+.sy-brand { display: flex; align-items: center; gap: 12px; margin: 0 0 6px; }
+.sy-brand .name { font-family: "Shippori Mincho", serif; font-size: 1.45rem; font-weight: 700; line-height: 1; }
+.sy-brand .mean { font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; color: var(--vermilion); font-weight: 700; margin-top: 4px; }
+
+/* ---------- chips */
+.sy-chip { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 999px;
+  font-size: .76rem; font-weight: 600; border: 1px solid var(--line); background: var(--card); color: var(--ink);
+  margin: 0 6px 6px 0; white-space: nowrap; }
+.sy-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.sy-chip.ok { color: var(--ok); border-color: #c4dcc4; background: #f0f6ee; }
+.sy-chip.warn { color: var(--warn); border-color: #ecd0b5; background: #fbf2e8; }
+
+/* ---------- source cards */
+.sy-src { border: 1px solid var(--line); background: var(--card); border-radius: 12px; padding: 12px 14px; margin-bottom: 10px; }
+.sy-src .hd { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+.sy-src .n { font-family: "JetBrains Mono", monospace; font-size: .72rem; color: #fff; background: var(--ink);
+  border-radius: 6px; padding: 1px 7px; margin-right: 8px; }
+.sy-src .doc { font-weight: 700; font-size: .9rem; }
+.sy-src .sec { color: var(--muted); font-size: .8rem; margin-top: 2px; }
+.sy-src .score { font-family: "JetBrains Mono", monospace; font-size: .72rem; color: var(--muted); white-space: nowrap; }
+.sy-src .body { font-size: .86rem; color: #2c2c30; margin: 8px 0 6px; line-height: 1.55; }
+.sy-journey { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; font-size: .72rem; color: var(--muted); margin-top: 6px; }
+.sy-journey b { font-family: "JetBrains Mono", monospace; font-weight: 500; padding: 1px 6px; border-radius: 5px; color: #fff; }
+.sy-journey .arrow { opacity: .5; }
+
+/* ---------- callouts */
+.sy-conflict { border: 1px solid #efc9bd; background: #fbefe9; padding: 10px 14px; border-radius: 10px;
+  font-size: .9rem; margin: 6px 0 12px; }
+.sy-conflict b { color: var(--vermilion); }
+.sy-conflict b::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%;
+  background: var(--vermilion); margin: 0 7px 1px 0; }
+.sy-note { font-size: .82rem; color: var(--muted); }
+.sy-check { font-size: .86rem; padding: 7px 0; border-bottom: 1px dashed var(--line); }
+.sy-check:last-child { border-bottom: 0; }
+.sy-foot { text-align: center; font-size: .76rem; color: var(--muted); margin-top: 40px; }
+
+/* ---------- streamlit tweaks */
+[data-testid="stMetric"] { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
+[data-testid="stMetricLabel"] p { font-size: .74rem; color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+[data-testid="stChatMessage"] { background: transparent; }
+.stButton button p { text-align: left; }
+[data-testid="stNavSectionHeader"] { letter-spacing: .1em; }
+
+@media (max-width: 640px) {
+  .sy-hero { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .sy-hero svg { display: none; }  /* the header already shows the mark on phones */
+  .sy-hero h1 { font-size: 2.4rem; }
+  .block-container { padding: 4.5rem 1rem 1rem; }  /* clear Streamlit's fixed mobile header */
+}

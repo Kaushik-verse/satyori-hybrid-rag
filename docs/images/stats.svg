@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 170" width="1280" height="170" role="img" aria-labelledby="t">
+  <title id="t">At a glance: 0.744 nDCG@10 on BEIR SciFact, 11 percent above BM25, 1.00 MRR on the held-out set, 12 retrieval techniques, 49 tests</title>
+  <rect width="1280" height="170" rx="22" fill="#1C1C1E"/>
+  <circle cx="1238" cy="42" r="7" fill="#C8412B"/>
+  <g font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" text-anchor="middle">
+    <g font-family="'Hiragino Mincho ProN',Georgia,serif" font-size="50" fill="#FFFDF8">
+      <text x="140" y="92">0.744</text><text x="390" y="92">+11%</text><text x="640" y="92">1.00</text><text x="890" y="92">12</text><text x="1140" y="92">49</text>
+    </g>
+    <g font-size="14.5" fill="#CFCAC0" font-weight="600">
+      <text x="140" y="126">nDCG@10 · BEIR SciFact</text><text x="390" y="126">over BM25 on SciFact</text>
+      <text x="640" y="126">MRR · held-out property set</text><text x="890" y="126">retrieval techniques</text><text x="1140" y="126">offline tests</text>
+    </g>
+    <g stroke="#FFFDF8" stroke-opacity=".16"><path d="M265 40V130M515 40V130M765 40V130M1015 40V130"/></g>
+  </g>
+</svg>

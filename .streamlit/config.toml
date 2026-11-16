@@ -1,0 +1,28 @@
+[theme]
+base = "light"
+primaryColor = "#C8412B"
+backgroundColor = "#F6F3EC"
+secondaryBackgroundColor = "#ECE7DC"
+textColor = "#1C1C1E"
+borderColor = "#E0D9CB"
+linkColor = "#23395B"
+baseRadius = "10px"
+font = "Manrope:https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+headingFont = "Shippori Mincho:https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&display=swap"
+codeFont = "JetBrains Mono:https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+chartCategoricalColors = ["#23395B", "#5E7F36", "#C8412B", "#C98F2B", "#6B6B70", "#8C5A7A", "#3F7CAC", "#B5653A", "#2F6F6A"]
+
+[theme.sidebar]
+backgroundColor = "#FFFDF8"
+secondaryBackgroundColor = "#F3EEE3"
+
+[client]
+toolbarMode = "minimal"
+showErrorDetails = "none"
+
+[browser]
+gatherUsageStats = false
+
+[server]
+headless = true
+maxUploadSize = 25
