@@ -9,6 +9,8 @@ Ask about a sale agreement, RERA certificate, title search or loan letter: it an
 
 <br/>
 
+[![Live demo](https://img.shields.io/badge/▶%20live%20demo-try%20it-C8412B?style=for-the-badge)](https://hybrid-rag-assistant-dxrpvnpurkiwixnbsntq3c.streamlit.app/)
+
 ![Python](https://img.shields.io/badge/Python-3.11%2B-1C1C1E?style=flat-square&logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.67-1C1C1E?style=flat-square&logo=streamlit&logoColor=white)
 ![Groq](https://img.shields.io/badge/Groq-gpt--oss--120b-1C1C1E?style=flat-square)
@@ -19,7 +21,7 @@ Ask about a sale agreement, RERA certificate, title search or loan letter: it an
 [![Stars](https://img.shields.io/github/stars/Kaushik-verse/satyori-hybrid-rag?style=flat-square&color=C8412B)](https://github.com/Kaushik-verse/satyori-hybrid-rag/stargazers)
 ![License](https://img.shields.io/badge/license-all%20rights%20reserved-64646B?style=flat-square)
 
-[The name](#-the-name) · [Results](#-results) · [What it does](#-what-it-does) · [Architecture](#-architecture) · [Techniques](#-twelve-retrieval-techniques) · [Run it](#-run-it-locally) · [Benchmarks](#-reproduce-the-benchmarks)
+[**Live demo**](https://hybrid-rag-assistant-dxrpvnpurkiwixnbsntq3c.streamlit.app/) · [The name](#-the-name) · [Results](#-results) · [What it does](#-what-it-does) · [Architecture](#-architecture) · [Techniques](#-twelve-retrieval-techniques) · [Run it](#-run-it-locally) · [Benchmarks](#-reproduce-the-benchmarks)
 
 </div>
 
